@@ -391,7 +391,7 @@ class Emitter:
         if not self.terse:
             print("")
             print(r"/* --------------------------------+")
-            print(r"| TSQX: by CJ Quines and Evan Chen |")
+            print(r"| TSQX: by Evan Chen and CJ Quines |")
             print(r"| https://github.com/vEnhance/tsqx |")
             print(r"+----------------------------------+")
             print(original_raw.strip())
