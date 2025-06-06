@@ -17,7 +17,7 @@ Or, Arch Linux users can use [AUR](https://aur.archlinux.org/packages/tsqx).
 
 ## Documentation
 
-See [Wiki](https://github.com/cjquines/tsqx/wiki/Documentation).
+See [Wiki](https://github.com/vEnhance/tsqx/wiki/Documentation).
 
 ## Example code
 
