@@ -2,6 +2,15 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.hatch.version]
+path = "tsqx/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["tsqx"]
+
+[tool.hatch.envs.default.scripts]
+tsqx = "python -m tsqx"
+
 [project]
 name = "tsqx"
 description = "Asymptote pre-processor for Euclidean geometry diagrams"
@@ -14,27 +23,20 @@ readme = "README.md"
 urls = { repository = "https://github.com/vEnhance/tsqx/" }
 requires-python = ">=3.10,<4.0"
 dependencies = [
+    "prek>=0.2.25",
 ]
 dynamic = ["version"]
-
-[tool.hatch.version]
-path = "tsqx/__about__.py"
-
-[tool.hatch.build.targets.wheel]
-packages = ["tsqx"]
-
-[tool.hatch.envs.default.scripts]
-tsqx = "python -m tsqx"
 
 [project.scripts]
 tsqx = "tsqx.__main__:main"
 
-[tool.hatch.envs.dev]
-dependencies = [
+[dependency-groups]
+dev = [
     "codespell>=2.4.1",
     "pyright>=1.1.394",
     "toml>=0.10.2",
-    "ruff>=0.9.7"
+    "ruff>=0.9.7",
+    "pytest>=9.0.2",
 ]
 
 [tool.pyright]
