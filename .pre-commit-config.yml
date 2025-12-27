@@ -77,9 +77,9 @@ repos:
         pass_filenames: false
         stages: [pre-push]
 
-      - id: pyright
-        name: pyright
-        entry: uv run pyright .
+      - id: ty
+        name: ty
+        entry: uv run ty check
         language: system
         pass_filenames: false
         stages: [pre-push]
