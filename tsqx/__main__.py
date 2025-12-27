@@ -235,7 +235,8 @@ class Parser:
         head, *tail = tokens
         if comment != "":
             yield {"op": Blank(), "comment": comment}
-        if head in ["triangle", "regular"]:
+        if head in ("triangle", "regular"):
+            assert isinstance(head, str)
             for name, exp in zip(tail, generate_points(head, len(tail))):
                 assert isinstance(name, str)
                 yield {"op": Point(name, [exp]), "comment": f"via ~{head}"}
