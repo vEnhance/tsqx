@@ -199,13 +199,11 @@ wheels = [
 [[package]]
 name = "tsqx"
 source = { editable = "." }
-dependencies = [
-    { name = "prek" },
-]
 
 [package.dev-dependencies]
 dev = [
     { name = "codespell" },
+    { name = "prek" },
     { name = "pytest" },
     { name = "ruff" },
     { name = "toml" },
@@ -213,11 +211,11 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "prek", specifier = ">=0.2.25" }]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "codespell", specifier = ">=2.4.1" },
+    { name = "prek", specifier = ">=0.2.25" },
     { name = "pytest", specifier = ">=9.0.2" },
     { name = "ruff", specifier = ">=0.9.7" },
     { name = "toml", specifier = ">=0.10.2" },

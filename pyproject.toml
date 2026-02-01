@@ -22,9 +22,6 @@ license = { text = "MIT" }
 readme = "README.md"
 urls = { repository = "https://github.com/vEnhance/tsqx/" }
 requires-python = ">=3.10,<4.0"
-dependencies = [
-    "prek>=0.2.25",
-]
 dynamic = ["version"]
 
 [project.scripts]
@@ -36,6 +33,7 @@ dev = [
     "ty>=0.0.7",
     "toml>=0.10.2",
     "ruff>=0.9.7",
+    "prek>=0.2.25",
     "pytest>=9.0.2",
 ]
 
