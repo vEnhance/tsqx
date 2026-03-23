@@ -402,7 +402,15 @@ class Emitter:
 def main():
     from argparse import ArgumentParser
 
+    from tsqx.__about__ import __version__
+
     argparser = ArgumentParser(description="Generate Asymptote code.")
+    argparser.add_argument(
+        "-v",
+        "--version",
+        action="version",
+        version=f"%(prog)s {__version__}",
+    )
     argparser.add_argument(
         "-p",
         "--pre",
