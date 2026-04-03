@@ -21,7 +21,7 @@ See [Wiki](https://github.com/vEnhance/tsqx/wiki/Documentation).
 
 ## Example code
 
-```
+```text
 ~triangle A B C
 D ;= foot A B C
 E := midpoint A--B
@@ -35,7 +35,7 @@ B--F' / dashed blue
 
 Generated code:
 
-```
+```text
 pair A = dir(110);
 pair B = dir(210);
 pair C = dir(330);
