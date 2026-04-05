@@ -18,7 +18,7 @@ authors = [
   { name = "Evan Chen", email = "evan@evanchen.cc" },
   { name = "CJ Quines", email = "cj@cjquines.com" }
 ]
-license = { text = "MIT" }
+license = "MIT"
 readme = "README.md"
 urls = { repository = "https://github.com/vEnhance/tsqx/" }
 requires-python = ">=3.11,<4.0"
